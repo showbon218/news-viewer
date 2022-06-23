@@ -2,7 +2,7 @@ import React from "react";
 import Categories from "../components/Categories";
 import NewsList from "../components/NewsList";
 
-const NeswPage = ({match}) => {
+const NewsPage = ({match}) => {
     const category = match.params.category || 'all';
 
     return(
@@ -13,4 +13,4 @@ const NeswPage = ({match}) => {
     );
 };
 
-export default NeswPage;
+export default NewsPage;

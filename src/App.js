@@ -1,11 +1,11 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import NeswPage from './pages/NeswPage' ;
+import NewsPage from './pages/NewsPage' ;
 
 const App = () => {
   return(
     <div>
-        (과제)
+        (<Route path='/' component={NewsPage}/>
     </div>
   )
 }
