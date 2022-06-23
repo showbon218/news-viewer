@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import Newsitem from "./Newsitem";
+import NewsItem from "./NewsItem";
 import axios from 'axios';
 
 const NewsListBlock = styled.div`
@@ -43,7 +43,7 @@ const NewsList = ({category}) => {
     return (
         <NewsListBlock>
             {articles.map(article => (
-                <Newsitem key={article.url} article={article} />
+                <NewsItem key={article.url} article={article} />
             ))}
         </NewsListBlock>
     )

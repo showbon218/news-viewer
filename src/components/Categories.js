@@ -39,18 +39,19 @@ const categories = [
     }
 ];
 
-const CategoriesBlock = styled(NavLink)`
+const CategoriesBlock = styled.div`
     display: flex;
     padding: 1rem;
     width: 768px;
     margin: 0 auto;
+
     @media screen and (max-width: 768px) {
         width: 100%;
         overflow-x: auto;
     }
 `;
 
-const Category = styled.div`
+const Category = styled(NavLink)`
     font-size: 1.125rem;
     cursor: pointer;
     white-space: pre;

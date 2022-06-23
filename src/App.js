@@ -5,7 +5,7 @@ import NewsPage from './pages/NewsPage' ;
 const App = () => {
   return(
     <div>
-        (<Route path='/' component={NewsPage}/>
+        <Route path='/:category?' component={NewsPage}/>
     </div>
   )
 }
